@@ -37,6 +37,26 @@ main {
     width: 90%;
     margin: 0 auto;
 }
+.marquee {
+    top: 10%;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+}
+@keyframes slide-ltr {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%
+    }
+}
+.marquee img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation: slide-ltr 10s linear infinite;
+}
 h1 {
     font-size: 4em;
     font-family: 'VT323', monospace;
